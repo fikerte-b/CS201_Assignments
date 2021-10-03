@@ -13,14 +13,14 @@ public class CoffeeBag {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Please enter the number of coffee bags sold");
-         totalNumberOfBags = keyboard.nextInt();
+        int bags = keyboard.nextInt();
         System.out.println("Please enter the unit weight of a bag in pounds");
-          unitWeight = keyboard.nextDouble();
-        totalPriceOfSale(totalNumberOfBags, unitWeight);
+          double unitWt = keyboard.nextDouble();
+        totalPriceOfSale(bags, unitWt);
 
     }
 
-    public  static void totalPriceOfSale(int bags, double weight){
+    public  static void totalPriceOfSale(int totalNumberOfBags, double unitWeight){
         double totalPrice = totalNumberOfBags * unitWeight * UNIT_PRICE;
         double totalPriceWithTax = totalPrice + totalPrice * TAX_RATE;
         DecimalFormat df = new DecimalFormat("0.00");
