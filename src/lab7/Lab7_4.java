@@ -9,6 +9,7 @@ public class Lab7_4 {
         System.out.println("Please enter a number to check ");
         int num = keyboard.nextInt();
         while(num >=0)
+
         {
             System.out.println(isPrime(num));
             System.out.println("Please enter another number to check");
@@ -22,12 +23,19 @@ public class Lab7_4 {
         static boolean isPrime(int number)
         {
 
-//            if (number <= 1)
-//                return false;
-            for (int i = 2; i < number; i++)
-                if (number % i == 0)
-                    return false;
+            if (number <= 1)
+                return false;
+           for (int i = 2; i < number; i++)
+             if (number % i == 0)
+                 return false;
+         int i =2;
+         while(i<number) {
+             if (number % i == 0)
+               return false;
+             i++;
 
-            return true;
+
+
+         }   return true;
     }
 }
