@@ -11,7 +11,10 @@ public class Lab7_4 {
         while(num >=0)
 
         {
-            System.out.println(isPrime(num));
+            if((isPrime(num)))
+                System.out.println("Prime");
+            else
+                System.out.println("Not Prime");
             System.out.println("Please enter another number to check");
             num = keyboard.nextInt();
 

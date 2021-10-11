@@ -2,7 +2,7 @@ package lab7;
 
 import java.util.Scanner;
 
-public class Lab7_1a {
+public class Lab7_1 {
     public static void main(String[] args) {
 
         // For part a
