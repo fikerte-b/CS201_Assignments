@@ -1,4 +1,4 @@
-package lab8;
+package lab8_9;
 
 import java.util.Scanner;
 
@@ -9,8 +9,9 @@ public class Lab8_3 {
         System.out.println("Please enter the  DNA strand");
         String sentence = keyboard.nextLine();
 
-        while(sentence.length() != 0) {
 
+
+        while(sentence.length() != 0) {
             StringBuffer replace = new StringBuffer();
             for (int i = 0; i < sentence.length(); i++) {
                 char c = sentence.charAt(i);
